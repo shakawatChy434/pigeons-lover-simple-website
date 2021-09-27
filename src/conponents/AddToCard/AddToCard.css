@@ -1,4 +1,6 @@
-.header-part{
+.card-details{
     background-color: rgb(231, 224, 224);
     padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
 }

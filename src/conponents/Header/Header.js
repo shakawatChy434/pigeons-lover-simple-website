@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import './Header.css'
 
-
-const Hader = () => {
-    const [breed, setBreed] = useState([])
-
-    useEffect(() => {
-        fetch('./pigeons.JSON')
-            .then(res => res.json())
-            .then(data => setBreed(data))
-    }, [])
-
+const Header = () => {
     return (
-        <div>
-            <h1>Hader part is connected.{breed.length} </h1>
+        <div className="header-part">
+            <h1>Pigeon House For Pigeons Lover</h1>
+            <small>Pigeons lovers never attectd by bad activities</small>
+            <h2>Total Budget :$500 </h2>
         </div>
     );
 };
 
-export default Hader;
+export default Header;
